@@ -1,0 +1,118 @@
+body{ margin: 50px; text-align: center; }
+
+/*
+.header{ grid-area:header; }
+.panel{ grid-area:panel; }
+.content{ grid-area:content; }
+.social{ grid-area:social; }
+.footer{ grid-area:footer; }
+*/
+
+.wrapper{
+	display: grid;
+	grid-template-columns:850px;
+	grid-template-rows:auto;
+	min-width: 300px;
+	max-width: 850px;
+	background-color: orange;
+}
+
+.box {
+  background-color: #ccc;
+  color: #444;
+  border-radius: 5px;
+  word-wrap:all;
+  padding: 5px
+}
+
+.picbox {
+	background-color: gray;
+	border-radius: 5px
+}
+
+.contentpicbox{
+	background-color: gray;
+	max-width: 300px; max-height: 200px;
+}
+
+
+.header{
+	grid-row:1;
+	background-color: gray;
+}
+
+.middlesection{
+	grid-row:2;
+	background-color: blue;
+	color: white;
+	padding: 5px;
+	display: grid;
+	grid-template-columns: 150px 615px 75px;
+	grid-template-rows: auto;
+}
+
+.panel{
+	grid-column:1;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	/*display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-row-gap:5px;*/
+}
+/*
+.panelItemA { grid-column: 1; grid-row: 1; }
+.panelItemB { grid-column: 1; grid-row: 2; }
+.panelItemC { grid-column: 1; grid-row: 3; }
+.panelItemD { grid-column: 1; grid-row: 4; }
+.panelItemE { grid-column: 1; grid-row: 5; }
+*/
+
+
+.content{
+	grid-column:2;
+	background-color: green;
+	color: white;
+	padding: 5px;
+	display: grid;
+	grid-template-columns: 300px 300px;
+	grid-template-rows: auto;
+	grid-column-gap:5px;
+}
+/*
+.contentItemA { grid-column: 1; grid-row: 1; }
+.contentItemB { grid-column: 2; grid-row: 1; }
+.contentItemC { grid-column: 1; grid-row: 2/4; }
+.contentItemD { grid-column: 2; grid-row: 2/4; }
+*/
+
+
+.social{
+	grid-column:3;
+	background-color: red;
+	color: white;
+}
+/*
+.socialItemA { grid-column: 1; grid-row: 1; }
+.socialItemB { grid-column: 1; grid-row: 2; }
+.socialItemC { grid-column: 1; grid-row: 3; }
+*/
+
+.footer{
+	grid-row:3;
+	background-color: gray;
+	color: white;
+	display: grid;
+	grid-template-columns:repeat(6, 135px);
+	grid-template-rows: auto;
+	grid-column-gap:5px;
+	grid-row-gap:5px;
+}
+.footerTitle { grid-column: 1/8; grid-row: 1; }
+.footerItemA { grid-column: 1; grid-row: 2; }
+.footerItemB { grid-column: 2; grid-row: 2; }
+.footerItemC { grid-column: 3; grid-row: 2; }
+.footerItemD { grid-column: 4; grid-row: 2; }
+.footerItemE { grid-column: 5; grid-row: 2; }
+.footerItemF { grid-column: 6; grid-row: 2; }
